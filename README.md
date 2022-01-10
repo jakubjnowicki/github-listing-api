@@ -15,18 +15,25 @@ API has five endpoints receiving only GET requests.
 ### INSTALLATION
 
 ```
-First create and activate virtual enviorment
-Next install dependencies using:
+First activate virtual enviornment by running
+Then using pip install all dependencies -> python -m pip install -r requirements.txt
+
+Make sure to have python 3.9+ installed.
+Then create (for venv-> python -m venv venv) and
+activate virtual environment -> [LINUX] venv\Scripts\activate or [WINDOWS] venv\Scripts\activate.bat
+Afterwards install dependencies using:
 pip install -r requirments.txt
+Now all the dependencies are installed.
 ```
 
 ### HOW TO USE?
 
 ```
+After making sure everything is installed.
 Launch server using command: uvicorn server:app
 After the server is running, you can start making requests to server endpoints through:
 
-- terminal -> run command: curl localhost:8000/allegro/?token="{PERSONAL_GITHUB_TOKEN}"
+- terminal command: curl localhost:8000/allegro/?token="{PERSONAL_GITHUB_TOKEN}"
 - FastAPI docs -> in browser go to page: http://localhost:8000/docs
 ```
 
@@ -38,7 +45,7 @@ After the server is running, you can start making requests to server endpoints t
 
     2. GET /current_limits/?token={token}-> [OPTIONAL: personal github token]
 
-    Shows current limits of allowed requests to github api, user can pass as optional parameter personal github token which increase the limits of github api's usage by adding ?{PERSONAL_TOKEN}
+    Shows current limits of allowed requests to github api, user can pass as optional parameter personal github token, which increase the limits of github api's usage by adding /?{PERSONAL_TOKEN}
 
 >
 
@@ -61,10 +68,10 @@ After the server is running, you can start making requests to server endpoints t
 ### TECHNOLOGY USED
 
 ```
-Language: python
-API framework: FastAPI
-Virtual enviornment: venv.
-Testing library: pytest
+Language: python v3.9
+API framework: FastAPI v0.71.0
+Virtual enviornment: venv
+Testing library: pytest v6.2.5
 ```
 
 ### TESTS
@@ -73,13 +80,6 @@ Testing library: pytest
 In order to succesfully run test, user has to provide PERSONAL_API_TOKEN.
 Be cautious -> tests use multiple requests which can consume all of github's api allowed requests.
 Run in terminal: pytest test_server.py -v -s
-```
-
-### INSTALLATION
-
-```
-First activate virtual enviornment by running-> [LINUX] venv\Scripts\activate, [WINDOWS] venv\Scripts\activate.bat
-Then using pip install all dependencies -> python -m pip install -r requirements.txt
 ```
 
 ### DEVELOPMENT PLANS
@@ -120,7 +120,7 @@ Then using pip install all dependencies -> python -m pip install -r requirements
 
 >
 
-    10. Extending API's functionality to organisations' repositories with relation to members.
+    10. Extending API's functionality to organisations' repositories with relation to its members.
 
 >
 
