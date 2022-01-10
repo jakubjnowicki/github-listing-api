@@ -32,29 +32,29 @@ After the server is running, you can start making requests to server endpoints t
 
 ### ENDPOINTS
 
-    1. /  ->  About text for github-listing-api
+    1. GET /  ->  About text for github-listing-api
 
 >
 
-    2. /current_limits/?token={token}-> [OPTIONAL: personal github token]
+    2. GET /current_limits/?token={token}-> [OPTIONAL: personal github token]
 
     Shows current limits of allowed requests to github api, user can pass as optional parameter personal github token which increase the limits of github api's usage by adding ?{PERSONAL_TOKEN}
 
 >
 
-    3. /all_repositories/{username}/?token={token} -> [REQUIRED: github username, OPTIONAL: personal github token]
+    3. GET /all_repositories/{username}/?token={token} -> [REQUIRED: github username, OPTIONAL: personal github token]
 
     Listing all github user's repositories' names and corresponding star count - stargazer_count
 
 >
 
-    4. /all_languages/{username}/?token={token} -> [REQUIRED: github username, OPTIONAL: personal github token]
+    4. GET /all_languages/{username}/?token={token} -> [REQUIRED: github username, OPTIONAL: personal github token]
 
     Returning sum of all stars of github user's repositories
 
 >
 
-    5. /all_stars_count/{username}/?token={token}= - [REQUIRED: github username, OPTIONAL: personal github token]
+    5. GET /all_stars_count/{username}/?token={token}= - [REQUIRED: github username, OPTIONAL: personal github token]
 
     Listing languages and their size in bytes used across github user's repositories
 
