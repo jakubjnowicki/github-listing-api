@@ -2,27 +2,33 @@
 
 ### ABOUT
 
-    github-listing-api is an API written in python using FastAPI framework.
-    API allows (based on github user's repositories) to:
-        - list names of repositories
-        - return languages used with their size in bytes used
-        - get all stars count
-        - check current user's requests limits for github api.
-    API has five endpoints receiving only GET requests.
+```
+github-listing-api is an API written in python using FastAPI framework.
+API allows (based on github user's repositories) to:
+    - list names of repositories
+    - return languages used with their size in bytes used
+    - get all stars count
+    - check current user's requests limits for github api.
+API has five endpoints receiving only GET requests.
+```
 
 ### INSTALLATION
 
-    First create and activate virtual enviorment
-    Next install dependencies using:
-    pip install -r requirments.txt
+```
+First create and activate virtual enviorment
+Next install dependencies using:
+pip install -r requirments.txt
+```
 
 ### HOW TO USE?
 
-    Launch server using command: uvicorn server:app
-    After the server is running, you can start making requests to server endpoints through:
+```
+Launch server using command: uvicorn server:app
+After the server is running, you can start making requests to server endpoints through:
 
-    - terminal -> run command: curl localhost:8000/allegro/?token="{PERSONAL_GITHUB_TOKEN}"
-    - FastAPI docs -> in browser go to page: http://localhost:8000/docs
+- terminal -> run command: curl localhost:8000/allegro/?token="{PERSONAL_GITHUB_TOKEN}"
+- FastAPI docs -> in browser go to page: http://localhost:8000/docs
+```
 
 ### ENDPOINTS
 
@@ -54,21 +60,27 @@
 
 ### TECHNOLOGY USED
 
-    Language: python
-    API framework: FastAPI
-    Virtual enviornment: venv.
-    Testing library: pytest
+```
+Language: python
+API framework: FastAPI
+Virtual enviornment: venv.
+Testing library: pytest
+```
 
 ### TESTS
 
-    In order to succesfully run test, user has to provide PERSONAL_API_TOKEN.
-    Be cautious -> tests use multiple requests which can consume all of github's api allowed requests.
-    Run in terminal: pytest test_server.py -v -s
+```
+In order to succesfully run test, user has to provide PERSONAL_API_TOKEN.
+Be cautious -> tests use multiple requests which can consume all of github's api allowed requests.
+Run in terminal: pytest test_server.py -v -s
+```
 
 ### INSTALLATION
 
-    First activate virtual enviornment by running-> [LINUX] venv\Scripts\activate, [WINDOWS] venv\Scripts\activate.bat
-    Then using pip install all dependencies -> python -m pip install -r requirements.txt
+```
+First activate virtual enviornment by running-> [LINUX] venv\Scripts\activate, [WINDOWS] venv\Scripts\activate.bat
+Then using pip install all dependencies -> python -m pip install -r requirements.txt
+```
 
 ### DEVELOPMENT PLANS
 
