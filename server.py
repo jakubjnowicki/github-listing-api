@@ -176,7 +176,6 @@ def base_method(username, token, func_name):
 
     content = format_result(username, result, func_name)
     return JSONResponse(status_code=200, content=content)
-    # return JSONResponse(status_code=200, content=content)
 
 
 # returns ABOUT API text

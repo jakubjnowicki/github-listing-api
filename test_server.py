@@ -6,7 +6,7 @@ import datetime
 
 client = TestClient(app)
 
-PERSONAL_API_TOKEN = "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"
+PERSONAL_API_TOKEN = ""
 SNEAK_PEEK = 120
 
 USERNAME_LIST = [
@@ -18,7 +18,6 @@ USERNAME_LIST = [
     "techwithtim",
     "SteinOveHelset",
     "sentdex",
-    "karoly-zsolnai-feher",
 ]
 
 

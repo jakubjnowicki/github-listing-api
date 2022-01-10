@@ -68,7 +68,7 @@
 ### INSTALLATION
 
     First activate virtual enviornment by running-> [LINUX] venv\Scripts\activate, [WINDOWS] venv\Scripts\activate.bat
-    Then proceed to installing all dependencies -> python -m pip install -r requirements.txt
+    Then using pip install all dependencies -> python -m pip install -r requirements.txt
 
 ### DEVELOPMENT PLANS
 
