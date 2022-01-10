@@ -20,14 +20,13 @@
 
     Launch server using command: uvicorn server:app
     After the server is running, you can start making requests to server endpoints through:
-        - terminal -> run command: curl localhost:8000/allegro/?token="{PERSONAL_GITHUB_TOKEN}"
-        - FastAPI docs -> in browser go to page: http://localhost:8000/docs
+
+    - terminal -> run command: curl localhost:8000/allegro/?token="{PERSONAL_GITHUB_TOKEN}"
+    - FastAPI docs -> in browser go to page: http://localhost:8000/docs
 
 ### ENDPOINTS
 
-    1. /
-
-    About text for github-listing-api
+    1. /  ->  About text for github-listing-api
 
 >
 
@@ -73,47 +72,47 @@
 
 ### DEVELOPMENT PLANS
 
-    1) Introducing caching for user's requests
+    1) Introducing caching and changes verification.
 
 >
 
-    2. Code refactoring, eg. improving readability, comments, dynamically create repositories per page requests
+    2. Code refactoring, eg. improving readability, comments, dynamically create repositories per page requests.
 
 >
 
-    3. Improving exception handling and github's api limits
+    3. Improving exception handling and github's api limits.
 
 >
 
-    4. Adding response_models to endpoints
+    4. Adding response_models to endpoints.
 
 >
 
-    5. Further optimising multithreading / using asynchronous requests instead of used "requests" library
+    5. Further optimising multithreading / using asynchronous requests instead of used "requests" library.
 
 >
 
-    6. Adding listing functionality of differentiation to fork and non-fork repositories
+    6. Adding listing functionality of differentiation to fork and non-fork repositories.
 
 >
 
-    7. Allowing for user to login to access slow fetching data functionality - which would give finalise user's request after couple of hours
+    7. Allowing for user to login to access slow fetching data functionality - user's request would finish processing after couple of hours, after that it would wait for user to get it.
 
 >
 
-    8. Improving security by adding logging, blocking ip addresses
+    8. Improving security by adding logging, blocking ip addresses.
 
 >
 
-    9. Deploying solution to remote server, eg. Heroku, AWS
+    9. Deploying solution to remote server, eg. Heroku, AWS.
 
 >
 
-    10. Extending API's functionality to organisations' repositories with relation to members
+    10. Extending API's functionality to organisations' repositories with relation to members.
 
 >
 
-    11. Extending and improving testing, adding slow testing to cope with github api's request limits
+    11. Extending and improving testing, adding slow testing to cope with github api's request limits.
 
 >
 
@@ -122,3 +121,7 @@
 >
 
     13. Allowing user to pass several tokens to increase github's api requests limitations.
+
+>
+
+    14. Using Docker to ensure architecture independence.
